@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+   text-decoration: none;
+ }
+ :root{
+   --txt-color:#DC3617;
+   --product-txt-color:#3E8DE4;
+ }
+    *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+ .Products{
+    margin-top: 4%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+ }
+ @media screen and (max-width:600px) {
+   .Products{
+      flex-direction:column ;
+      width: 100%; 
+   }
+   .products > *{
+      align-items: center; 
+      justify-content: center; 
+   }
+   .products-sec{
+      flex-direction: column;
+      width: 100%;
+   }
+   .products-sec{
+      align-items: center;
+   }  
+ }
+ .product1,.product2,.product3{
+   border: solid 2px white;
+   box-shadow: 10px 10px 10px whitesmoke;
+ }
+ .product1 img:hover,.product2 img:hover,.product3 img:hover,.product4 img:hover,.product5 img:hover,.product6 img:hover{
+   transform: scale(1.2);
+ }
+ .product4,.product5,.product6{
+   border: solid 2px white;
+   box-shadow: 10px 10px 10px whitesmoke;
+ }
+ .picinfo1{
+ }
+ .star1{
+   color: var(--txt-color);
+ }
+ .itemname{
+   color: var(--product-txt-color);
+   font-size: 20px;
+ }
+ .products-sec{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px ;
+ }
+    </style>
+</head>
+<body>
+    <main id="allProducts">
+        <main class="Products">
+            <div class="product1">
+                <a href="./shoes.html">
+                <img src="./product_01.jpg" width="300px" ></a>
+                <div class="picinfo1"><br> 
+                  <span class="itemname"> Shoes</span>&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1000<i class="fa-solid fa-indian-rupee-sign"></i><br></br>
+                  <p>Shoes are not just a means to cover our feet; <br>they are a reflection of our personal style and <br>journey</p><br>
+                  <div class="star1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Review(28)</div>
+                </div>
+            </div>
+            <div class="product2">
+                <a href="./sweater.html">
+                <img src="./product_02.jpg"width="300px" ></a>
+                <div class="picinfo2"> <br>
+                    <span class="itemname">Sweater</span>&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;800<i class="fa-solid fa-indian-rupee-sign"></i><br><br>
+                    <p>It made from knitted or woven fabric, <br>designed to keep you warm. It comes in<br> various styles.</p><br>
+                    <div class="star1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Review(34)</div>
+                  </div>
+            </div>
+            <div class="product3">
+                <a href="./cashmere.html">
+                <img src="./product_03.jpg" width="300px"></a>
+                <div class="picinfo3"><br> 
+                    <span class="itemname">Cashmere Product</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2000<i class="fa-solid fa-indian-rupee-sign"></i><br><br>
+                    <p>Cashmere products are luxurious and<br> incredibly soft, crafted from the <br>fine undercoat of cashmere goats </p><br>
+                    <div class="star1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Review(20)</div>
+                  </div>
+            </div>
+        </main>
+        <main class="products-sec">
+             <div class="product4">
+                <img src="./product_04.jpg" width="300px">
+                <div class="picinfo4"><br>
+                    <span class="itemname"> Craft Toys</span>; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1200<i class="fa-solid fa-indian-rupee-sign"></i><br><br>
+                    <p>winter craft toys that spark creativity and fun,<br> perfect for cozy indoor activities and <br>holiday decorations.</p><br>
+                    <div class="star1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Review(44)</div>
+                </div>
+            </div>
+            <div class="product5">
+                <a href="./sweater.html">
+                <img src="./product_05.jpg" width="300px"></a>
+                <div class="picinfo5"> <br>
+                    <span class="itemname"> Sweatshirt</span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1200<i class="fa-solid fa-indian-rupee-sign"></i><br><br>
+                    <p>Shoes are not just a means to cover our feet; <br>they are a reflection of our personal style and <br>journey</p><br>
+                    <div class="star1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Review(18)</div>
+                </div>
+            </div>
+            <div class="product6">
+                <img src="./product_06.jpg" width="300px">
+                <div class="picinfo6"><br> 
+                    <span class="itemname"> Craft Toy</span>&emsp14;&emsp14;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;300<i class="fa-solid fa-indian-rupee-sign"></i><br><br>
+                    <p>winter craft toys that spark creativity and fun,<br> perfect for cozy indoor activities and <br>holiday decorations.</p><br>
+                    <div class="star1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Review(29)</div>
+                </div>
+            </div>  
+        </main>
+        </main>
+    
+</body>
+</html>

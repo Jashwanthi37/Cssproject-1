@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            text-decoration: none;
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --txt-color: #DC3617;
+            --product-txt-color: #3E8DE4;
+        }
+
+        .Products {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .product1 {
+            border: solid 2px white;
+            box-shadow: 10px 10px 10px whitesmoke;
+        }
+
+        .product1 img:hover,
+        .product2 img:hover {
+            transform: scale(1.2);
+        }
+
+        .product2 {
+            border: solid 2px white;
+            box-shadow: 10px 10px 10px whitesmoke;
+        }
+
+        .star1 {
+            color: var(--txt-color);
+        }
+
+        .itemname {
+            color: var(--product-txt-color);
+            font-size: 20px;
+        }
+
+        @media screen and (max-width:600px) {
+            .Products {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .products>* {
+                align-items: center;
+                justify-content: center;
+            }
+
+            .products-sec {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .products-sec {
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main id="allProducts">
+        <main class="Products">
+            <div class="product1">
+                <a href="./sweater.html">
+                    <img src="./product_02.jpg" width="300px"></a>
+                <div class="picinfo2"> <br>
+                    <span class="itemname">Sweater</span>&emsp;&emsp;
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;800<i
+                        class="fa-solid fa-indian-rupee-sign"></i><br><br>
+                    <p>It made from knitted or woven fabric, <br>designed to keep you warm. It comes in<br> various
+                        styles.</p><br>
+                    <div class="star1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Review(34)</div>
+                </div>
+            </div>
+            <div class="product2">
+                <a href="./sweater.html">
+                    <img src="./product_05.jpg" width="300px"></a>
+                <div class="picinfo5"> <br>
+                    <span class="itemname"> Sweatshirt</span>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1200<i
+                        class="fa-solid fa-indian-rupee-sign"></i><br><br>
+                    <p>Shoes are not just a means to cover our feet; <br>they are a reflection of our personal style and
+                        <br>journey</p><br>
+                    <div class="star1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Review(18)</div>
+                </div>
+            </div>
+        </main>
+    </main>
+
+</body>
+
+</html>
